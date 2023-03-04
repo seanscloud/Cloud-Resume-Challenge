@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    font-family: 'Helvetica';
+    background-color: #00aedb;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 1073px;
+    height: 50px;
+    background-color: #242424;
+}
+.personal{
+    position: fixed;
+    display: block;
+    top: 0;
+    margin-top: 0;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 25px;
+    left: 20px;
+    text-align: center;
+    background-color: #004557;
+    color: #ffffff;
+    overflow-wrap: normal;
+}
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 90%;
+    left: 10%;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-bottom: -3px;
+}
+.education, .work {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    top: 0;
+    bottom: 100vh;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 375px;
+    margin-right: 0;
+    background-color: #ffffff; 
+    
+    
+}
+.wrapper2 {
+    display: flex;
+}
+.skillsicon, .workicon {
+    display:inline:block;
+    float:left;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding-left:50px;
+}
+.webicon1, .webicon2 {
+    width: 50px;
+    height: 50px;
+    padding-left: auto;
+    padding-top: 35px;
+}
+.profilepic {
+    width: 150px;
+    height: 150px;
+}
+.solid2 {
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -3px;
+}
+.solid3 {
+    border-left: 3px solid #bbb;
+    width: 3px;
+    padding-left: 400px;
+}
