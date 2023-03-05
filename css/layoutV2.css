@@ -1,0 +1,28 @@
+section {
+    font-family: "Calibri";
+}
+.container {
+    display: flex;
+}
+.right {
+    float: right;
+    width: 75%;
+    margin: auto;
+}
+.left {
+    float: left; 
+    width: 25%;
+    margin: auto;
+}
+.colorleft {
+    background-color: #3993DD;
+}
+.colorright {
+    background-color: #F4EBE8;
+}
+.colorleft, .colorright {
+    padding-left: 25px;
+}
+.about {
+    color: #ffffff;
+}
