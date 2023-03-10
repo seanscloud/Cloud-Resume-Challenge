@@ -1,5 +1,5 @@
-html {
-    background-color: #29E7CD;
+html, .colorleft {
+    background-color: #004557;
 }
 section {
     font-family: "Calibri";
@@ -7,11 +7,15 @@ section {
 .profileimage {
     width: 250px;
     height: 250px;
+    border-radius: 50%;
     padding-top: 20px;
-    padding-left: 60px;
 }
 .container {
-    display: flex;
+    display: block;
+}
+hr.solid {
+    border-top: 3px solid #ffffff;
+    width: 25%
 }
 .right {
     float: right;
@@ -23,9 +27,6 @@ section {
     width: 25%;
     margin: auto;
 }
-.colorleft {
-    background-color: #3993DD;
-}
 .colorright {
     background-color: #F4EBE8;
 }
@@ -35,7 +36,7 @@ section {
 .about, .counter, .social {
     color: #ffffff;
     padding: 25px;
-    text-align: center;
+    text-align: left;
 }
 .skills, .work {
     padding: 50px;
