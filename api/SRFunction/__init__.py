@@ -2,23 +2,18 @@ import logging
 
 import azure.functions as func
 
+def main(req: func.HttpRequest, counter: func.DocumentList, updatedCounter: func.Out[func.Document]) -> func.HttpResponse:
+    try:
+        # Retrieve the current counter value from the first document in the list
+        current_count = int(counter[0].get("count"))
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+        # Increment the counter value
+        new_count = current_count + 1
 
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
+        # Update the counter document with the new count value
+        updatedCounter.set(func.Document.from_dict({"id": "1", "count": str(new_count)}))
 
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-             status_code=200
-        )
+        return func.HttpResponse(f"The count is now {new_count}")
+    except Exception as e:
+        logging.exception(e)
+        return func.HttpResponse("Error occurred", status_code=500)

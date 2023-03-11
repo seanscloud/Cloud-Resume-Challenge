@@ -6,3 +6,5 @@ Cloud resume challenge repo.
 Modified the original index and stylesheet to include elements from v2. Might keep working with it while I practice using flex on v2. 
 
 Created function and uploaded it to Azure and Github.
+
+Created the python script and json bindings for the CosmosDB.

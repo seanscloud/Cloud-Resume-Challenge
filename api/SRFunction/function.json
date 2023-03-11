@@ -1,20 +1,39 @@
 {
   "scriptFile": "__init__.py",
+  "configurationSource": "attributes",
   "bindings": [
     {
-      "authLevel": "function",
       "type": "httpTrigger",
-      "direction": "in",
-      "name": "cosmosdb",
       "methods": [
         "get",
         "post"
-      ]
+      ],
+      "authLevel": "function",
+      "name": "req"
     },
     {
-      "type": "http",
-      "direction": "out",
-      "name": "$return"
+      "type": "cosmosDB",
+      "connectionStringSetting": "cosmosdbstring",
+      "id": "1",
+      "partitionKey": "1",
+      "databaseName": "crcdatabase",
+      "collectionName": "Counter",
+      "createIfNotExists": false,
+      "useMultipleWriteLocations": false,
+      "useDefaultJsonSerialization": false,
+      "name": "counter"
+    },
+    {
+      "type": "cosmosDB",
+      "connectionStringSetting": "cosmosdbstring",
+      "id": "1",
+      "partitionKey": "1",
+      "databaseName": "crcdatabase",
+      "collectionName": "Counter",
+      "createIfNotExists": false,
+      "useMultipleWriteLocations": false,
+      "useDefaultJsonSerialization": false,
+      "name": "updatedCounter"
     }
   ]
 }
