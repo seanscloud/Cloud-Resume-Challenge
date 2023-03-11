@@ -4,3 +4,5 @@ Cloud resume challenge repo.
 
 #Added title to change the name on the browser tab. 
 Modified the original index and stylesheet to include elements from v2. Might keep working with it while I practice using flex on v2. 
+
+Created function and uploaded it to Azure and Github.
