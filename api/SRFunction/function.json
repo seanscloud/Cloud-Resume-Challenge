@@ -4,7 +4,6 @@
   "bindings": [
     {
       "type": "httpTrigger",
-      "direction": "in",
       "methods": [
         "get",
         "post"
@@ -15,7 +14,6 @@
     {
       "type": "cosmosDB",
       "connectionStringSetting": "cosmosdbstring",
-      "direction": "in",
       "id": "1",
       "partitionKey": "1",
       "databaseName": "crcdatabase",
@@ -28,7 +26,6 @@
     {
       "type": "cosmosDB",
       "connectionStringSetting": "cosmosdbstring",
-      "direction": "out",
       "id": "1",
       "partitionKey": "1",
       "databaseName": "crcdatabase",
